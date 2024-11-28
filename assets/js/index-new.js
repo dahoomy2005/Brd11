@@ -1364,29 +1364,8 @@ function initScrolltriggerAnimations() {
       }
       
       
-      if(document.querySelector(".about-services")) {
       // Scrolltrigger Animation : About Services BG
-      $(".about-services").each(function (index) {
-        let triggerElement = $(this);
-        let targetElement = $(".about-header, .line-globe, .about-image, .about-services");
-      
-        let tl = gsap.timeline({
-          scrollTrigger: {
-            trigger: triggerElement,
-            start: "-25% 100%",
-            end: "100% 100%",
-            scrub: 0,
-          }
-        });
-        tl.set(targetElement, {
-          backgroundColor: "#FFFFFF",
-        })
-        tl.to(targetElement, {
-          backgroundColor: "#E9EAEB",
-          ease: "none",
-        });
-      });
-      }
+     
       
       if(document.querySelector(".digital-ball .globe")) {
       // Scrolltrigger Animation : Globe
